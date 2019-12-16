@@ -1,0 +1,23 @@
+{
+  "name": "navette",
+  "version": "1.0.0",
+  "description": "poor HTML & CSS",
+  "main": "./dist.main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiABCo/HTML-CSS.git"
+  },
+  "keywords": [
+    "[\"HTML\"",
+    "\"CSS\"]"
+  ],
+  "author": "\"Nico\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiABCo/HTML-CSS/issues"
+  },
+  "homepage": "https://github.com/NiABCo/HTML-CSS#readme"
+}
