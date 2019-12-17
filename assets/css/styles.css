@@ -43,4 +43,14 @@ ul{    /*ul{} est un sélecteur qui fait référence à tous les <ul> du doc HTM
     margin: 5em;
     margin-left: 5em;
 
+
+}
+
+.custom-select {
+    position: relative;
+    text-align: center;
+}
+
+.col-8 {
+    align-content: center;
 }
