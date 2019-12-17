@@ -1,156 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta
-            name="viewport" 
-            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-        > 
-        <title>Navette Economique</title>
-
-        <!--link stylesheets-->
+        <meta 
+            name = "viewport" 
+            content = "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>
+            Projet Navette
+        </title>
+        <link href="./assets/css/styles.css" rel="stylesheet">
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="./assets/css/styles.css" rel="stylesheet"> <!--insertion du lien css -->
-
-        <!--Add scripts-->
-        <script src="./dist/src/main.js"></script>
+        <script src="./dist/js/main.chunk.js"></script>
+        <script src="./dist/js/main.js"></script>
     </head>
-
     <body>
         <div class="container">
-            <div id="date-selector" class="row">
+            <div id="date-selector" class="tour bordered row">
                 <div class="col-2">
-                    <a href="#" title="Previous date" class="btn btn-warning" role="button">
-                        &lt;&lt;
-                    </a>
+                <a href="#" title="Previoux Date" class="btn btn-warning disabled" role="button">
+                    &lt;&lt;
+                </a>
                 </div>
-
                 <div class="col-8">
-                    <span>16 déc. 2019</span> <!--span pour isoler du texte-->
+                <span>16 Déc. 2019</span>
                 </div>
-
                 <div class="col-2">
-                    <a href="#" title="Next date" class="btn btn-warning" role="button">
-                        &gt;&gt;
-                    </a>
+                <a href="#" title="Next Date" class="btn btn-warning" role="button">
+                    &gt;&gt;
+                </a>
                 </div>
-            </div>
+        
         </div>
-
-
-        <main>
-             <ul>
-                <li class="tour bordered" id="Tour-1">
-                    <div class="col-2">
-                        <span class="badge badge-secondary">8h00</span>
-                    </div>
-                    <div class="col-8" ></div>
-                        <form id="tour-form-1" >
-                            <select class="custom-select" size="1" name="Nb- personnes" style="width: 50em">
-                                <option value="Nb-personnes" disabled selected>Nb. personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <button type="button " disabled class="btn btn-primary" >
-                            Réserver
-                        </button>
-                        </form>
-
-                    <div class="col-2">
-                        <span class="badge badge-secondary">
-                         5
-                        </span>
-                    </div>
-                </li>
-
-                <li class="tour bordered" id="Tour-1">
-                    <div class="col-2">
-                        <span class="badge badge-secondary" >
-                            11h00</span>
-                    </div>
-                    <div class="col-8"></div class>
-                        <form id="tour-form-1" >
-                            <select class="custom-select" size="1" name="Nb- personnes">
-                                <option value="Nb-personnes" disabled selected>Nb. personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <button type="button " disabled class="btn btn-primary" >
-                            Réserver
-                        </button>
-                        </form>
-
-                    <div class="col-2">
-                        <span class="badge badge-secondary">
-                         5
-                        </span>
-                    </div>
-                </li>
-
-                <li class="tour bordered" id="Tour-1">
-                    <div class="col-2">
-                        <span class="badge badge-secondary">13h00</span>
-                    </div>
-                    <div class="col-8"></div class>
-                        <form id="tour-form-1" >
-                            <select class="custom-select" size="1" name="Nb- personnes">
-                                <option value="Nb-personnes" disabled selected>Nb. personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <button type="button " disabled class="btn btn-primary" >
-                            Réserver
-                        </button>
-                        </form>
-
-                    <div class="col-2">
-                        <span class="badge badge-secondary">
-                         5
-                        </span>
-                    </div>
-                </li>
-
-                <li class="tour bordered" id="Tour-1">
-                    <div class="col-2">
-                        <span class="badge badge-secondary">17h00</span>
-                    </div>
-                    <div class="col-8"></div class>
-                        <form id="tour-form-1" >
-                            <select class="custom-select" size="1" name="Nb- personnes">
-                                <option value="Nb-personnes" disabled selected>Nb. personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <button type="button " disabled class="btn btn-primary" >
-                            Réserver
-                        </button>
-                        </form>
-
-                    <div class="col-2">
-                        <span class="badge badge-secondary">
-                         5
-                        </span>
-                    </div>
-                </li>
-
-              
-             </ul>
-         </main>
+   
+<main>
+    <ul>
+        <li class="tour bordered row" id="tour-1">
+            <div class="col-2">
+                <span class="badge badge-secondary">8h00</span>
+            </div>
+            <form id="tour-form-1" class="col-7">
+                <div class="form-group">
+                    <select size="1" class="form-control"> /** class="form-control" permettrait de copier la forme du body **/
+                    <option value="" disabled selected>Nb. Personnes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </div>
+        <button type="button" disabled class="btn btn-primary">Réserver</button>
+            </form>
+            <div class="col-3">
+                <span class="badge badge-secondary">
+                    5 places restantes
+                </span>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="tour bordered row" id="tour-1">
+            <div class="col-2">
+                <span class="badge badge-secondary">11h00</span>
+            </div>
+            <form id="tour-form-1" class="col-7">
+                <div class="form-group">
+                <select size="1" class="form-control"> /** class="form-control" permettrais de copier la forme du body **/
+                    <option value="" disabled selected>Nb. Personnes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        <button type="button" disabled class="btn btn-primary">Réserver</button>
+            </form>
+            <div class="col-3">
+                <span class="badge badge-secondary">
+                    5 places restantes
+                </span>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="tour bordered row" id="tour-1">
+            <div class="col-2">
+                <span class="badge badge-secondary">14h00</span>
+            </div>
+            <form id="tour-form-1" class="col-7">
+                <div class="form-group">
+                <select size="1" class="form-control"> /** class="form-control" permettrais de copier la forme du body **/
+                    <option value="" disabled selected>Nb. Personnes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        <button type="button" disabled class="btn btn-primary">Réserver</button>
+            </form>
+            <div class="col-3">
+                <span class="badge badge-secondary">
+                    5 places restantes
+                </span>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="tour bordered row" id="tour-1">
+            <div class="col-2">
+                <span class="badge badge-secondary">17h00</span>
+            </div>
+            <form id="tour-form-1" class="col-7">
+                <div class="form-group">
+                <select size="1" class="form-control"> /** class="form-control" permettrais de copier la forme du body **/
+                    <option value="" disabled selected>Nb. Personnes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        <button type="button" disabled class="btn btn-primary">Réserver</button>
+            </form>
+            <div class="col-3">
+                <span class="badge badge-secondary">
+                    5 places restantes
+                </span>
+            </div>
+        </li>
+    </ul>
+        </main>
+    </div>
+    <!-- App loader-->
+    <div id="app-loader" class="outer-loader">
+        <div class="inner-loader">
+            <img src="assets/images/ConventionalOblongFairybluebird-max-1mb.gif" alt="Application Loader animation">
+        </div>
+    </div>
     </body>
 </html>
