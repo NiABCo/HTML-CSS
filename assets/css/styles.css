@@ -1,0 +1,46 @@
+/**
+* styles.css: styles de base de l'application
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+}
+
+ul{    /*ul{} est un sélecteur qui fait référence à tous les <ul> du doc HTML*/
+    list-style-type: none;  /*list-style-type est un attribut */
+    padding: 0; 
+} /*Tout cet ensemble s'appelle un règle (selecteur + attribut(s))*/
+
+#date-selector { /* Selector for an Identified element*/
+    
+    background-color: rgba(207, 226, 39, 0.5); 
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em; /*décale le texte de 3* 16 pixels*/
+  
+}
+
+#date-selector div:nth-child(2){
+    text-align: center;
+}
+
+#date-selector div:last-child{
+    text-align: right;
+}
+
+.tour{ /*Selector for a class attribute */
+    height: 8em;
+    background-color: rgba(60, 55, 141, 0.7);
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: .3em;
+}
+
+.tour.bordered{ /*Attention aux espaces!!!*/
+    border: solid 3px rgb(163, 58, 58);
+    margin: 5em;
+    margin-left: 5em;
+
+}

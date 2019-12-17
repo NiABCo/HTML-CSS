@@ -38,36 +38,30 @@
         <main>
              <ul>
                 <li class="tour bordered" id="Tour-1">
-                    <span class="badge">8h00</span>
-                    <form id="tour-form-1">
-                        <select class="custom-select lo" size="1" name="" id="valueToSelect">
-                            <option value="" disabled selected>Nb. personnes</option>
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                        </select>
-                        <button type="button" disabled class="btn btn-primary">
+                    <div class="col-2">
+                        <span class="badge badge-secondary">8h00</span>
+                    </div>
+                    <div class="col-8"></div class>
+                        <form id="tour-form-1" >
+                            <select class="custom-select" size="1" name="Nb- personnes">
+                                <option value="Nb-personnes" disabled selected>Nb. personnes</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <button type="button " disabled class="btn btn-primary" >
                             Réserver
                         </button>
-                    </form>
-                    <span class="badge">
-                        5
-                    </span>
-                
-                    
-                </li>
+                        </form>
 
-                <li class="tour bordered" id="Tour-2">
-                    11h00
-                </li>
-                <li class="tour bordered" id="Tour-3">
-                    14h00
-                </li>
-
-                <li class="tour bordered" id="Tour-4">
-                    17h00
+                    <div class="col-2">
+                        <span class="badge badge-secondary">
+                         5
+                        </span>
+                    </div>
                 </li>
              </ul>
          </main>

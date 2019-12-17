@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/NiABCo/HTML-CSS/issues"
   },
-  "homepage": "https://github.com/NiABCo/HTML-CSS#readme"
+  "homepage": "https://github.com/NiABCo/HTML-CSS#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "typescript": "^3.7.3"
+  }
 }
